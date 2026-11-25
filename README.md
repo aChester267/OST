@@ -1,2 +1,19 @@
-# OST
-Stress test for CPU and GPU
+# OST (Overload Stress Test)
+
+**OST** — это портативная программа для стресс-тестирования процессора и видеокарты на Windows.
+
+## 🚀 Возможности
+* 100% нагрузка на CPU (оптимизированный duty-cycle).
+* 100% нагрузка на GPU (через OpenGL).
+* Поддержка видеокарт NVIDIA и AMD.
+* Живой график нагрева и защита от перегрева.
+* Экспорт отчетов в `.txt`.
+
+## 📥 Скачать
+Перейдите в раздел **Releases** (справа на этой странице) и скачайте `OST_Setup.exe`.
+
+## 🛠 Для разработчиков
+Запуск из исходников:
+```bash
+pip install psutil moderngl numpy glfw matplotlib
+python OST.py
